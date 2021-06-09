@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hairdressers",
+      "handler": "hairdressers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hairdressers/count",
+      "handler": "hairdressers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hairdressers/:id",
+      "handler": "hairdressers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hairdressers",
+      "handler": "hairdressers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hairdressers/:id",
+      "handler": "hairdressers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hairdressers/:id",
+      "handler": "hairdressers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

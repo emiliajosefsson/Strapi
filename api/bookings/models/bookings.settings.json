@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "bookings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "hairdresser": {
+      "type": "string"
+    },
+    "users_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "bookings"
+    },
+    "treatment_id": {
+      "model": "treatment",
+      "via": "booking"
+    }
+  }
+}

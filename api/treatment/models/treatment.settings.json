@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "treatments",
+  "info": {
+    "name": "Treatment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "booking": {
+      "via": "treatment_id",
+      "collection": "bookings"
+    }
+  }
+}
